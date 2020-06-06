@@ -129,7 +129,7 @@ def run(p):
                 print("Inteiro: {}".format(p[1]))
             if type(p[0]) == str:
                 print("Symbol/Operador: {}".format(p[0]))
-            if type(p[1]) == int:
+            if type(p[2]) == int:
                 print("Inteiro: {}".format(p[2]))
             return run(p[1]) + run(p[2])
         elif (p[0] == '-'):
@@ -137,7 +137,7 @@ def run(p):
                 print("Inteiro: {}".format(p[1]))
             if type(p[0]) == str:
                 print("Symbol/Operador: {}".format(p[0]))
-            if type(p[1]) == int:
+            if type(p[2]) == int:
                 print("Inteiro: {}".format(p[2]))
             return run(p[1]) - run(p[2])
         elif (p[0] == '*'):
@@ -145,7 +145,7 @@ def run(p):
                 print("Inteiro: {}".format(p[1]))
             if type(p[0]) == str:
                 print("Symbol/Operador: {}".format(p[0]))
-            if type(p[1]) == int:
+            if type(p[2]) == int:
                 print("Inteiro: {}".format(p[2]))
             return run(p[1]) * run(p[2])
         elif (p[0] == '/'):
@@ -153,7 +153,7 @@ def run(p):
                 print("Inteiro: {}".format(p[1]))
             if type(p[0]) == str:
                 print("Symbol/Operador: {}".format(p[0]))
-            if type(p[1]) == int:
+            if type(p[2]) == int:
                 print("Inteiro: {}".format(p[2]))
             return run(p[1]) / run(p[2])
         elif (p[0] == '='):
@@ -161,7 +161,7 @@ def run(p):
                 print("Inteiro: {}".format(p[1]))
             if type(p[0]) == str:
                 print("Symbol/Operador: {}".format(p[0]))
-            if type(p[1]) == int:
+            if type(p[2]) == int:
                 print("Inteiro: {}".format(p[2]))
             env[p[1]] = run(p[2])
         # print(env)
